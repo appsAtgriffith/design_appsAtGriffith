@@ -11,6 +11,7 @@ Front End
   iOS App
   Android App
   WinPho9 App
+  comments on history... comments on everything?
 
 App Server
   Authentication
