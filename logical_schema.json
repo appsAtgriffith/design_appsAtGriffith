@@ -1,0 +1,92 @@
+// THIS IS A SCHEMA USED FOR UNDERSTANDING HOW
+// DATA WILL BE STORED BY MONGO DB
+
+// User -- for Devise
+{
+  "_id"                     : "",
+
+  "created_at"              : "",
+  "email"                   : "",
+
+  // DEVISE STUFF
+  "encrypted_password"      : "",
+  "reset_password_token"    : "",
+  "reset_password_sent_at"  : "",
+  "remember_created_at"     : "",
+  "sign_in_count"           : "",
+  "current_sign_in_at"      : "",
+  "last_sign_in_at"         : "",
+  "current_sign_in_ip"      : "",
+  "last_sign_in_ip"         : "",
+
+  // PROFILE STUFF
+  "profile" : {
+    "_id"           : "",
+    "full_name"     : "",
+    "s_number"      : "",
+    "bio"           : "",
+    "company"       : "",
+    "school"        : "",
+    "phone_numbers" : [
+      {
+        "_id"     : "",
+        "type"    : "",
+        "number"  : ""
+      }
+    ]
+  },
+
+  // PROJECTS STUFF
+  "projects" : [
+    {
+      "_id"         : "",
+
+      "project_id"  : "",
+      "role"        : "",
+      "score"       : "",
+
+      "created_on"  : "",
+      "modified_on" : ""
+    }
+  ]
+}
+
+// Phone number types
+[
+  // ENUM used for user.phone_numbers
+  "WORK",
+  "MOBILE"
+]
+
+// PROJECT
+{
+  "_id"               : "",
+
+  "name"              : "",
+  "description"       : "",
+  "external_link"     : "",
+  "budget"            : "",
+  "due_date"          : "",
+  "created_by_id"     : "",
+  "comment"           : "",
+
+  // HISTORY STUFF
+  "created_id"        : "",
+  "current_state_id"  : "",
+  "history"           : [
+    {
+      "_id"   : "",
+      "type"  : "",
+      "date"  : ""
+    }
+  ],
+
+  // USERS STUFF
+  "team_lead_id"      : "",
+  "memberships"       : [""]  // _id to users
+
+  // PICTURES STUFF
+  // pictures: []
+
+  // CANCAN STUFF
+}
